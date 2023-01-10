@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Bootstrap响应式网站</a>
+            <!-- 响应式关键关键按钮 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <!-- margin start = margin left  -->
+                    <li class="nav-item">
+                        <div class="nav-link">前端知识</div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">后端知识</div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">移动开发知识</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 第一部分-->
+    <!-- p padding -->
+    <section class="p-5 bg-dark text-light text-center text-sm-start">
+        <div class="container">
+            <!-- display flex -->
+            <div class="d-flex">
+                <!-- 左边 -->
+                <div>
+                    <h1>成为一个<span class="text-warning">前端工程师</span></h1>
+                    <!-- margin-top margin-bottom  -->
+                    <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor sint sunt,
+                        voluptate
+                        aliquam velit dolorum eligendi? Id blanditiis illum et quaerat dolorum necessitatibus, tempore
+                        aperiam eos voluptatum impedit temporibus?
+                        Delectus, dignissimos consectetur, illum tempore, rem asperiores recusandae pariatur repellat
+                        officiis nemo ad? Aliquam aliquid tenetur officiis ducimus at perspiciatis atque accusantium a
+                        ratione magnam. Molestias voluptatibus deserunt voluptates deleniti!</p>
+                    <button class="btn btn-primary btn-lg">开始编程之旅</button>
+                </div>
+                <!-- 右边-->
+                <img src="./img/showcase.svg" alt="showcase" class="w-50 d-none d-md-block">
+            </div>
+        </div>
+    </section>
+    <!-- 第二部分 -->
+    <section class="p-5 bg-primary text-light">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3">现在注册账号开始编程之旅</h3>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="请输入你的邮箱">
+                    <button class="btn btn-dark btn-lg">注册</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 第三部分（栅栏系统） -->
+    <section class="p-5">
+        <div class="container">
+            <!--  g-4 gap 引导间隙-->
+            <div class="row g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body  text-center">
+                            <div class="card-title">前端知识</div>
+                            <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum a, facere fuga magnam
+                                cupiditate dolor voluptatibus similique repellendus placeat, doloribus provident debitis
+                            </div>
+                            <a href="#" class="btn btn-primary mt-2">学习前端</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="card-title ">后端知识</div>
+                            <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum a, facere fuga magnam
+                                cupiditate dolor voluptatibus similique repellendus placeat, doloribus provident debitis
+                            </div>
+                            <a href="#" class="btn btn-dark mt-2">学习后端</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="card-title">移动开发知识</div>
+                            <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum a, facere fuga magnam
+                                cupiditate dolor voluptatibus similique repellendus placeat, doloribus provident debitis
+                            </div>
+                            <a href="#" class="btn btn-dark mt-2">学习移动开发</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 第四部分 -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row align-content-center justify-content-between">
+                <div class="col-md">
+                    <!-- img-fluid   1、使图片不会超出当前的div 2、在图片上增加max-width: 100%; 和 height: auto; -->
+                    <img src="img/1.svg" alt="1" class="img-fluid">
+                </div>
+                <div class="col-md p-5">
+                    <h2>前端课程介绍</h2>
+                    <p class="lead">
+                        前端即网站前台部分，运行在PC端，移动端等浏览器上展现给用户浏览的网页。随着互联网技术的发展，HTML5，CSS3，前端框架的应用，跨平台响应式网页设计能够适应各种屏幕分辨率，合适的动效设计，给用户带来极高的用户体验。
+                    </p>
+                    <p>1、HTML5 + CSS3 <br>2、移动Web网页开发 <br>3、 JavaScript网页编程 <br>4、Node.js与AJAX... <br></p>
+                    <a href="#" class="btn btn-light">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 第五部分 -->
+    <section class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-content-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>大数据课程介绍</h2>
+                    <p class="lead">
+                        大数据(big data)，或称巨量资料，指的是所涉及的资料量规模巨大到无法透过主流软件工具，在合理时间内达到撷取、管理、处理、并整理成为帮助企业经营决策更积极目的的资讯。
+                    </p>
+                    <p>《程序设计基础》、《Python程序设计》、《数据分析基础》、《Linux操作系统》、《Python爬虫技术》、《Python数据分析》、《Java程序设计》、《Hadoop大数据框架》、《Spark技术与应用》、《HBASE分布式数据库》、《大数据可视化》
+                    </p>
+                    <a href="#" class="btn btn-light">查看更多</a>
+                </div>
+                <div class="col-md">
+                    <!-- img-fluid   1、使图片不会超出当前的div 2、在图片上增加max-width: 100%; 和 height: auto; -->
+                    <img src="img/2.svg" alt="1" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 第六部分 -->
+    <section class="p-5">
+        <div class="container">
+            <h2 class="text-center">常见问题</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            【TypeScript】TS类型声明（二）
+                        </button>
+                    </h2>
+                    <!-- show 表示展开 -->
+                    <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            本文主要讲解TypeScript的基本数据结构，主要包括JS基本数据类型以及TS特有的数据类型。
+                            JS基本数据类型： string、number、null、undefined、boolean、array
+                            TS特有的数据类型：tuple（元祖）、enum（枚举）、any、unknow、never。
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                最新最全面的Spring详解（一）——Spring概述与IOC容器
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Spring灵活而全面的扩展能力和第三方库让开发人员可以构建几乎任何可以想象到的应用程序。
+                                Spring框架的【控制反转(IoC)】和【依赖注入(DI)】特性为一系列广泛的特性和功能提供了基础。
+                                无论您是在为web构建安全的、响应式的、基于云的微服务，还是为企业构建复杂的流数据流，Spring都有工具可以提供帮助。
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    微信小程序 Spdier - OfferShow 反编译逆向（一）
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    本文需要使用到的工具有：
+                                    Charles抓包工具、夜神模拟器、微信开发者工具、wxapkg反编译工具CrackMinApp；
+                                    提示：需要安装好Charles和夜神模拟器并配置好App抓包环境，以及安装好微信开发者工具 / 反编译工具CrackMinApp。
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+    <!-- 第七部分 -->
+    <section class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-light">其它领域</h2>
+            <p class="lead text-center text-white mb-5">
+                人工智能、数据结构与算法、音视频、云原生...
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="/img/python.jpg" class="mb-3 rounded-circle" />
+                            <h3 class="card-title">Python</h3>
+                            <p class="card-text">
+                                当我把用Python做的课堂点名系统献给各科老师后，再也没挂过科。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="/img/artificial_intelligence.jpg" class="mb-3 rounded-circle img-responsive" />
+                            <h3 class="card-title">人工智能</h3>
+                            <p class="card-text">
+                                全宇宙最强AI 聊天机器人模型ChatGPT惊艳来袭，你还不上车？
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="/img/cloud_primordial.jpg" class="mb-3 rounded-circle" />
+                            <h3 class="card-title">云原生</h3>
+                            <p class="card-text">
+                                【微服务】Nacos为什么丢弃短连接(http)而选择拥抱长连接(gRPC)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="/img/audio_and_video.png" class="mb-3 rounded-circle" />
+                            <h3 class="card-title">音视频</h3>
+                            <p class="card-text">
+                                数电实验 数字电子钟设计 基于quartus 实现计时校时闹钟秒表稍复杂音频
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- 第八部分 -->
+    <section class="p-5">
+        <div class="container">
+            <div class="text-center mb-4">联系我</div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">电话：111xxx</li>
+                <li class="list-group-item">邮箱：123@qq.com</li>
+                <li class="list-group-item">地址：深圳市xxx区</li>
+            </ul>
+        </div>
+    </section>
+    <!-- 第九部分 尾部 -->
+    <footer class="p-5 bg-dark text-white text-center">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2023 Bootstrap响应式网站</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
